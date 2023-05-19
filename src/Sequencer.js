@@ -1,6 +1,9 @@
 import './Sequencer.scss';
 import SequencerNode from './SequencerNode';
 import { useState, useEffect } from 'react';
+import ReactAudioPlayer from 'react-audio-player';
+import sound1 from './sounds/drums1.wav'
+import kick1 from './sounds/kick1.wav'
 
 
 function Sequencer() {
@@ -43,7 +46,7 @@ function Sequencer() {
   return (
     <div className="sequencer-container">
         {[...Array(16)].map((x, i) =>
-            <SequencerNode currentNodeNum={currentNodeNum} nodeIndex={i}  />
+            <SequencerNode key={i} currentNodeNum={currentNodeNum} soundFile={kick1} nodeIndex={i}  />
         )}
 
         <div style={{color: 'white'}}>{currentNodeNum}</div>
