@@ -1,0 +1,27 @@
+.sequencer-container {
+    width: 800px;
+    background-color: purple;
+    border-radius: 20px;
+    padding: 40px;
+    display:inline-block;
+    margin-top: 100px;
+  }
+
+  .start-button {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    display: inline-block;
+    border-radius: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  .stop-button {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+  }
