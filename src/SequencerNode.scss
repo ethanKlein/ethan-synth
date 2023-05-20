@@ -1,13 +1,25 @@
 .sequencer-node {
     height: 30px;
     width: 30px;
-    border-radius: 10px;
     background-color: white;
     border: 1px solid black;
     margin-right: 10px;
     display: inline-block;
+    cursor: pointer;
+    -webkit-transition: all  200ms ease-out;
+    -ms-transition: all  200ms ease-out;
+    transition: all  200ms ease-out;
+
+    &:hover {
+        // filter: brightness(95%);
+        background-color: pink;
+    }
 
     &.on {
+        background-color: yellow;
+    }
+
+    &.selected {
         background-color: orange;
     }
 }
